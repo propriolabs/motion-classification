@@ -1,0 +1,13 @@
+requests
+flask
+simplejson
+elasticsearch
+pandas
+numpy
+scikit-learn
+statsmodels
+patsy
+keras==0.3.0
+PyWavelets==0.3.0
+git+git://github.com/Theano/Theano.git
+git+git://github.com/klon/ucrdtw

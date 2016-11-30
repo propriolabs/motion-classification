@@ -1,0 +1,44 @@
+# Elastic Search Configuration
+
+es_url = 'localhost'
+es_port = '9200'
+es_index = 'proprio'
+es_test_index = 'proprio_test'
+es_doc_type = 'raw_v2'
+es_analyzed_doc = 'analysis_v2'
+
+# Development Server or Production Server
+analysis_port = 5000
+
+# Random Forest Classification Models and Dynamic Time Warping Templates
+
+rf_right = "./models/rf_right.pkl"
+rf_left = "./models/rf_left.pkl"
+dtw_template_right = './models/template_right.csv'
+dtw_template_left = './models/template_left.csv'
+
+# Recurrent Neural Network Classification Models and Weights
+
+lstm_right = './models/rnn_right.json'
+lstm_right_weights = './models/rnn_right.h5'
+lstm_left = './models/rnn_left.json'
+lstm_left_weights = './models/rnn_left.h5'
+
+# Convolutional Neural Network Classification Models and Weights
+
+cnn_right = './models/cnn_right.json'
+cnn_right_weights = './models/cnn_right.h5'
+cnn_left = './models/cnn_left.json'
+cnn_left_weights = './models/cnn_left.h5'
+
+# Last updated
+
+last_updated = "11/18"
+
+config = {"es_url": es_url, "es_port": es_port, "es_index": es_index, "es_test_index": es_test_index,
+          "es_doc_type": es_doc_type, "es_analyzed_doc": es_analyzed_doc,
+          "rf_right": rf_right, "rf_left": rf_left, "dtw_template_right": dtw_template_right,
+          "dtw_template_left": dtw_template_left, "lstm_right": lstm_right, "lstm_left": lstm_left,
+          "lstm_right_weights": lstm_right_weights, "lstm_left_weights": lstm_left_weights, "cnn_right": cnn_right,
+          "cnn_left": cnn_left, "cnn_right_weights": cnn_right_weights,
+          "cnn_left_weights": cnn_left_weights, "last_updated": last_updated, "analysis_port": analysis_port}
